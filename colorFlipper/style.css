@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  overflow-y: hidden;
+}
+
+.navbar {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  box-shadow: rgb(146, 141, 141) 0px 0px 8px 0px;
+}
+
+.navbar h2 {
+  /* background-color: red; */
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  color: rgb(34, 177, 243);
+  align-items: center;
+}
+
+.navbar ul {
+  /* background-color: rgb(71, 71, 78); */
+  width: 40%;
+  display: flex;
+  align-items: center;
+  gap: 30%;
+}
+ul li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+a:hover {
+  color: red;
+  transition: 0.5s ease-in-out;
+}
+
+.page {
+  background-color: red;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.details {
+  font-size: 1.8em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 400;
+  color: white;
+  background-color: rgba(40, 40, 41, 0.411);
+  padding: 20px;
+}
+
+button {
+  border: none;
+  padding: 10px;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 20px;
+  background-color: rgba(0, 255, 255, 0.521);
+  box-shadow: rgb(255, 0, 0) 0px 0px 10px 1px;
+}
+
+button:hover {
+  background-color: aqua;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar h2 {
+    /* background-color: red; */
+    width: 30%;
+    font-size: 0.8em;
+  }
+
+  .navbar ul {
+    /* background-color: rgb(71, 71, 78); */
+    width: 70%;
+    font-size: 0.8em;
+  }
+
+  .details {
+    font-size: 1.2em;
+    
+  }
+  
+}

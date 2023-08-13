@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.section {
+  background-color: rgb(179, 252, 233,0.4);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0px;
+}
+
+.section header {
+  padding: 20px 10px;
+  font-size: 1.5em;
+  font-weight: bolder;
+    color: rgb(0, 0, 0);
+}
+
+.section form
+{
+    padding: 15px;
+    display: flex;
+    gap:30px;
+    justify-content: center;
+    align-items: center;
+}
+form div
+{
+    font-size: 1.3em;
+}
+input
+{
+    outline: none;
+    border: none;
+    padding: 10px 30px;    
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.733);
+    color: white;
+    width: 10%;
+    font-weight: bold;
+}
+
+#para
+{
+    text-align: center;
+    padding:0px  120px ;
+}
+
+button
+{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(0, 60, 255, 0.452);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover
+{
+    background-color: rgba(0, 60, 255, 0.918);
+}
+
+@media screen and (max-width:600px) {
+    header
+    {
+        text-align: center;
+    }
+
+    .section form
+    {
+        gap:10px;
+    }
+    #para
+    {
+        padding:10px 20px;
+    }
+}
